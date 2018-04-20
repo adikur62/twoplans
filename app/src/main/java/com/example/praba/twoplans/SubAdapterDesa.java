@@ -13,8 +13,8 @@ import android.widget.TextView;
 public class SubAdapterDesa extends RecyclerView.Adapter<SubAdapterDesa.ViewHolder> {
     private static final String TAG = "SubAdapterDesa";
 
-    String namaDesa [] = {"Pura Uluwatu","Pura Tanah Lot","Pura Tirta Empul","Pura Lempuyang","Pura Besakih","Pura Beratan"};
-    int desa [] = {R.drawable.purauluwatu,
+    String namaDesa [] = {"Desa Penglipuran","Desa ","Pura Tirta Empul","Pura Lempuyang","Pura Besakih","Pura Beratan"};
+    int desa [] = {R.drawable.desa_wisata_penglipuran,
             R.drawable.puratanahlot,
             R.drawable.puratirtaempul,
             R.drawable.puralempuyang,
