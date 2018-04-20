@@ -13,19 +13,17 @@ import android.widget.TextView;
 public class SubAdapterDesa extends RecyclerView.Adapter<SubAdapterDesa.ViewHolder> {
     private static final String TAG = "SubAdapterDesa";
 
-    String namaDesa [] = {"Desa Kertalangu","Pura Tanah Lot","Pura Tirta Empul","Pura Lempuyang","Pura Besakih","Pura Beratan"};
-    int desa [] = {R.drawable.purauluwatu,
-            R.drawable.puratanahlot,
-            R.drawable.puratirtaempul,
-            R.drawable.puralempuyang,
-            R.drawable.purabesakih,
-            R.drawable.puraberatan};
+    String namaDesa [] = {"Desa Penglipuran","Desa Jati Luwih","Desa Palasari","Desa Pinggan","Desa Tenganan"};
+    int desa [] = {R.drawable.desa_wisata_penglipuran,
+            R.drawable.desajatiluwih,
+            R.drawable.desapalasari,
+            R.drawable.desapinggan,
+            R.drawable.desatenganan};
     String detail [] = {"des 1",
             "des 2",
             "des 3",
             "des 4",
-            "des 5",
-            "des 6"};
+            "des 5"};
 
     Context mContext;
     LayoutInflater layoutInflater;
@@ -52,7 +50,7 @@ public class SubAdapterDesa extends RecyclerView.Adapter<SubAdapterDesa.ViewHold
             public void onClick(View v) {
                 Intent kirimData = new Intent(mContext,DetailActivity.class);
                 kirimData.putExtra("Nama",namaDesa[position]);
-                kirimData.putExtra("img",detail[position]);
+                kirimData.putExtra("img",desa[position]);
                 kirimData.putExtra("Detail",detail[position]);
                 mContext.startActivity(kirimData);
             }
@@ -60,7 +58,9 @@ public class SubAdapterDesa extends RecyclerView.Adapter<SubAdapterDesa.ViewHold
     }
 
     @Override
-    public int getItemCount() { return namaDesa.length}
+    public int getItemCount() {
+        return namaDesa.length;
+    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView img;
