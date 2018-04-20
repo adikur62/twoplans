@@ -13,8 +13,8 @@ import android.widget.TextView;
 public class SubAdapterDesa extends RecyclerView.Adapter<SubAdapterDesa.ViewHolder> {
     private static final String TAG = "SubAdapterDesa";
 
-    String namaDesa [] = {"Desa Penglipuran","Desa ","Pura Tirta Empul","Pura Lempuyang","Pura Besakih","Pura Beratan"};
-    int desa [] = {R.drawable.desa_wisata_penglipuran,
+    String namaDesa [] = {"Desa Kertalangu","Pura Tanah Lot","Pura Tirta Empul","Pura Lempuyang","Pura Besakih","Pura Beratan"};
+    int desa [] = {R.drawable.purauluwatu,
             R.drawable.puratanahlot,
             R.drawable.puratirtaempul,
             R.drawable.puralempuyang,
@@ -39,7 +39,7 @@ public class SubAdapterDesa extends RecyclerView.Adapter<SubAdapterDesa.ViewHold
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = layoutInflater.inflate(R.layout.item_list,parent,false);
-        SubAdapterDesa.ViewHolder holder = new SubAdapterDesa.ViewHolder(view);
+        ViewHolder holder = new ViewHolder(view);
         return holder;
     }
 
@@ -60,16 +60,12 @@ public class SubAdapterDesa extends RecyclerView.Adapter<SubAdapterDesa.ViewHold
     }
 
     @Override
-    public int getItemCount() {
-        return namaDesa.length;
-    }
-
+    public int getItemCount() { return namaDesa.length}
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView img;
         TextView txt;
         TextView txtDes;
-
         public ViewHolder(View itemView) {
             super(itemView);
             img = (ImageView) itemView.findViewById(R.id.imgView);
