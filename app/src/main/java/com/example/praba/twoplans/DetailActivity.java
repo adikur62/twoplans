@@ -26,25 +26,27 @@ public class DetailActivity extends AppCompatActivity {
         imgGambar = (ImageView) findViewById(R.id.imgDet);
         txtDet = (TextView) findViewById(R.id.txtDetail);
 
+
         // intent ini fungsinya adalah untuk menerima data dari HomeAdapter
         Intent terimadata = getIntent();
         String nm = terimadata.getStringExtra("Nama");
         getSupportActionBar().setTitle(nm);
 
         imgGambar.setImageResource(terimadata.getIntExtra("img", 1));
+        txtDet.setText(terimadata.getStringExtra("Detail"));
         //angka satu itu menandakan bahwasannya nilai dari si integer (gak harus angka 1)
 
 
         // berfungsi untuk menampilkan icon back (kembali) di pojok kiri atas
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
     }
 }

@@ -40,10 +40,28 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent kirimData = new Intent(mContext,DetailActivity.class);
-                kirimData.putExtra("Nama",nama[position]);
-                kirimData.putExtra("img",gambar[position]);
-                mContext.startActivity(kirimData);
+                if(nama[position]=="Gunung"){
+                    Intent kirimData = new Intent(mContext, GunungActivity.class);
+                    kirimData.putExtra("Nama", nama[position]);
+                    kirimData.putExtra("img", gambar[position]);
+                    mContext.startActivity(kirimData);
+                } else if(nama[position]=="Pantai"){
+                    Intent kirimData = new Intent(mContext, PantaiActivity.class);
+                    kirimData.putExtra("Nama", nama[position]);
+                    kirimData.putExtra("img", gambar[position]);
+                    mContext.startActivity(kirimData);
+                } else if (nama[position]=="Pura"){
+                    Intent kirimData = new Intent(mContext, PuraActivity.class);
+                    kirimData.putExtra("Nama", nama[position]);
+                    kirimData.putExtra("img", gambar[position]);
+                    mContext.startActivity(kirimData);
+                } else if (nama[position]=="Desa Wisata"){
+                    Intent kirimData = new Intent(mContext, DesaActivity.class);
+                    kirimData.putExtra("Nama", nama[position]);
+                    kirimData.putExtra("img", gambar[position]);
+                    mContext.startActivity(kirimData);
+                }
+
         }
         });
 

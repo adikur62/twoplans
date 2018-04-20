@@ -24,7 +24,10 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".RecyclerActivity" />
-        <activity android:name=".Recycler1"></activity>
+        <activity android:name=".GunungActivity" />
+        <activity android:name=".PantaiActivity" />
+        <activity android:name=".PuraActivity" />
+        <activity android:name=".DesaActivity"></activity>
     </application>
 
 </manifest>
