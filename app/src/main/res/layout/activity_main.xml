@@ -5,40 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/dc75512e8cd48ebad00f40eeddafd49b"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/title1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Two-Plans"
-        android:fontFamily="sans-serif"
-        android:layout_centerHorizontal="true"
-        android:textColor="#fff"
-        android:textSize="30pt"
-        />
 
-    <TextView
-        android:id="@+id/title2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your Forever Guide"
-        android:layout_centerHorizontal="true"
-        android:textColor="#fff"
-        android:textSize="20pt"
-        android:fontFamily="cursive"
-        android:layout_below="@id/title1"/>
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two-Plans"
+            android:fontFamily="sans-serif"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="30pt"
+            />
 
-    <Button
-        android:id="@+id/start_bot"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/round_button"
-        android:gravity="center_vertical|center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
-        android:text="Start"
-        android:textColor="#fff" />
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Forever Guide"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="20pt"
+            android:fontFamily="cursive"
+            android:layout_below="@id/title1"/>
+
+        <Button
+            android:id="@+id/start_bot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="Start"
+            android:textColor="#fff" />
 
 </RelativeLayout>
