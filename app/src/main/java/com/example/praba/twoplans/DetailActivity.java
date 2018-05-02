@@ -38,8 +38,8 @@ public class DetailActivity extends AppCompatActivity {
 
 
         // berfungsi untuk menampilkan icon back (kembali) di pojok kiri atas
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
