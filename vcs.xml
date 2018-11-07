@@ -10,6 +10,10 @@
           <option name="url" value="https://github.com/gungwiraa/SimplifiedCampoc.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/gungwiraa/SimplifiedCampocUpdated-master.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\Asus\AndroidStudioProjects" />
